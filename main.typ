@@ -42,7 +42,7 @@
 
     align(left)[
       #text(9pt, font: "IBM Plex Mono")[
-        ropas.snu.ac.kr/~jypark
+        ropas.snu.ac.kr/\~jypark
       ]
     ],
 
