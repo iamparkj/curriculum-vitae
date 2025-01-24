@@ -17,14 +17,13 @@
       /박준영/ 
     ]
     #text(10pt, font: "New Computer Modern")[
-      [pɐk̚ t͡ɕu.nʲʌ̹ŋ]
+      [pɐk̚ t͡ɕ˭u.nʲʌ̹ŋ]
     ]
   ],
 
   grid(
     columns: (1fr, auto),
-    column-gutter: 13pt,
-    row-gutter: 17pt,
+    gutter: 11pt,
     align: top,
 
     align(right)[
@@ -34,6 +33,16 @@
     align(left)[
       #text(9pt, font: "IBM Plex Mono")[
         bloomwayz\@snu.ac.kr,\ parkjy\@ropas.snu.ac.kr
+      ]
+    ],
+
+    align(right)[
+      #text(10pt)[*Website:*]
+    ],
+
+    align(left)[
+      #text(9pt, font: "IBM Plex Mono")[
+        ropas.snu.ac.kr/~jypark
       ]
     ],
 
@@ -179,12 +188,11 @@
     list(
       [*Korean* (Native)],
       [*English* (Fluent)],
-      [*Spanish* (Intermediate)]
+      [*Español* (Intermediate)],
+      [*Deutsch* (Elementary)]
     )
 )
 
-#linebreak()
-
 #align(right)[
-  #text(9pt)[Last updated: 21 January 2025]
+  #text(9pt)[Last updated: 24 January 2025]
 ]
