@@ -152,14 +152,25 @@
     ],
     text(10pt)[
       *Tutor, _L0444.000400 Basic Computing_* \
+      Instructor: Kim, Hyunju \
       Faculty of Liberal Education, Seoul National University \
     ],
     
     text(9pt)[
-      spring 2024 \ autumn 2024
+      spring 2024
     ],
     text(10pt)[
       *Tutor, _L0444.000500 Core Computing_* \
+      Instructor: Byun, Haesun \
+      Faculty of Liberal Education, Seoul National University \
+    ],
+
+    text(9pt)[
+      autumn 2024
+    ],
+    text(10pt)[
+      *Tutor, _L0444.000500 Core Computing_* \
+      Instructor: Kim, Hyunju \
       Faculty of Liberal Education, Seoul National University \
     ],
     
@@ -168,12 +179,19 @@
     ],
     text(10pt)[
       *Teaching Assistant, _4190.310 Programming Languages_* \
+      Instructor: Yi, Kwangkeun \
       Dept. of Computer Science and Engineering, Seoul National University \
     ],
 
-    h(1cm),
-    h(1cm),
-    
+    text(9pt)[
+      spring 2025
+    ],
+    text(10pt)[
+      *Tutor, _F37.101 Basic Computing_* \
+      Instructor: Park, Nayeon \
+      SNU College, Seoul National University \
+    ],
+
     h(1cm),
     grid(
       columns: (auto, auto),
@@ -193,6 +211,7 @@
     )
 )
 
+#v(16.3cm)
 #align(right)[
   #text(9pt)[Last updated: 24 January 2025]
 ]
