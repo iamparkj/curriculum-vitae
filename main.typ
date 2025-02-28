@@ -191,6 +191,44 @@
       Instructor: Park, Nayeon \
       SNU College, Seoul National University \
     ],
+    
+    h(1cm),
+    grid(
+      columns: (auto, auto),
+      align: horizon,
+      column-gutter: 10pt,
+      
+      text(14pt)[*Honors*],
+      line(length: 100%)
+    ),
+
+    text(9pt)[
+      02/2025
+    ],
+    text(10pt)[
+      *Jebong Min Byeong-uk Foundation Scholarship* (Full-tuition) \
+      Jebong Min Byeong-uk Foundation \
+    ],
+    
+    text(9pt)[
+      09/2023 \
+      \-02/2024
+    ],
+    text(10pt)[
+      *Professor Fund Scholarship* \
+      College of Humanities, Seoul National University \
+    ],
+
+    text(9pt)[
+      08/2023
+    ],
+    text(10pt)[
+      *Ku Jaeseo Scholarship* (Half-tuition) \
+      Seoul National University Foundation \
+    ],
+
+    h(1cm),
+    h(1cm),
 
     h(1cm),
     grid(
