@@ -1,6 +1,38 @@
 #set page(
   paper: "a4",
   margin: (x: 2cm, y: 2cm),
+  footer: context [
+    #set align(center)
+    #set text(8pt)
+    #counter(page).display(
+      "1",
+      both: false,
+    )
+  ]
+)
+
+#set text(
+  size: 10pt,
+  font: (
+    "Libertinus Serif",
+    "KoPubWorldBatang_Pro"
+  )
+)
+
+#show raw: set text(
+  size: 9pt,
+  font: "JetBrainsMono NF"
+)
+
+#show link: set text(
+  size: 9pt,
+  font: "JetBrainsMono NF",
+)
+
+#let icon(it) = text(
+  size: 12pt,
+  font: "JetBrainsMono NF",
+  it
 )
 
 #grid(
@@ -16,47 +48,41 @@
     #text(10pt, font: "KoPubWorldBatang_Pro")[
       /박준영/ 
     ]
-    #text(10pt, font: "New Computer Modern")[
-      [pɐk̚ t͡ɕ˭u.nʲʌ̹ŋ]
+    #text(10pt, font: "Libertinus Serif")[
+      [pɐk t͡ɕu.nʲʌ̹ŋ]
     ]
   ],
 
   grid(
     columns: (1fr, auto),
     gutter: 11pt,
-    align: top,
+    align: center,
 
     align(right)[
-      #text(10pt)[*Email:*]
+      #icon[]
     ], 
 
     align(left)[
-      #text(9pt, font: "IBM Plex Mono")[
-        bloomwayz\@snu.ac.kr,\ parkjy\@ropas.snu.ac.kr
-      ]
+      #link("bloomwayz@snu.ac.kr")`,` \
+      #link("parkjy@ropas.snu.ac.kr")
     ],
 
     align(right)[
-      #text(10pt)[*Website:*]
+      #icon[󰖟]
     ],
 
     align(left)[
-      #text(9pt, font: "IBM Plex Mono")[
-        ropas.snu.ac.kr/\~jypark
-      ]
+      #link("https://ropas.snu.ac.kr/~jypark")[ropas.snu.ac.kr/\~jypark]
+      
     ],
 
     align(right)[
-      #text(10pt)[*Github:*]
+      #icon[]
     ], 
 
     align(left)[
-      #text(9pt, font: "IBM Plex Mono")[
-        github.com/bloomwayz
-      ]
-    ],
-    
-    
+      #link("https://github.com/bloomwayz")[github.com/bloomwayz]
+    ]
   )
 )
 
@@ -80,8 +106,8 @@
 
     text(9pt)[03/2023-],
     text(10pt)[
-      *Undergraduate, Linguistics* \
-      Seoul National University \
+      *Seoul National University* \
+      Undergraduate, Linguistics \
       Seoul, Korea
     ],
 
@@ -100,9 +126,11 @@
 
     h(1cm),
     list(
-      [Programming Languages],
-      [Type Inference],
-      [Static Analysis]
+      spacing: 1em,
+
+      [ Programming Languages ],
+      [ Static Analysis ],
+      [ Human Factors in Programming Languages ]
     ),
 
     h(1cm),
@@ -123,14 +151,33 @@
     ],
 
     align(left)[
-      #text(10pt)[
-        *Research intern* \
-        Programming Research Laboratory (ROPAS) \
-        Seoul, Korea
-      ]
+      *Programming Research Laboratory (ROPAS)* \
+      Research intern \
+      Seoul, Korea
+    ],
+
+    h(1cm),
+    h(1cm),
+
+    h(1cm),
+    grid(
+      columns: (auto, auto),
+      align: horizon,
+      column-gutter: 10pt,
       
+      text(14pt)[*Projects*],
+      line(length: 100%)
+    ),
+
+    h(1cm),
+
+    align(left)[
       #list(
-        [MLANG server for teaching _Programming Languages_ \ (#text(9pt, font: "IBM Plex Mono")[github.com/bloomwayz/vsm])]
+        spacing: 1.5em,
+        [ Haptic Keyboard for Blind or Low-vision Users \
+          (ongoing project) ],
+        [ Language server for typed lambda language M \
+          (#link("https://github.com/bloomwayz/vsm")[bloomwayz/vsm]) ]
       )
     ],
 
@@ -148,49 +195,42 @@
     ),
 
     text(9pt)[
-      summer 2023
+      spring 2025
     ],
     text(10pt)[
-      *Tutor, _L0444.000400 Basic Computing_* \
-      Instructor: Kim, Hyunju \
-      Faculty of Liberal Education, Seoul National University \
+      *Programming Lanuguages* (4190.310), Teaching Assistant. SNU. \
     ],
-    
+
     text(9pt)[
-      spring 2024
+      spring 2025
     ],
     text(10pt)[
-      *Tutor, _L0444.000500 Core Computing_* \
-      Instructor: Byun, Haesun \
-      Faculty of Liberal Education, Seoul National University \
+      *Basic Computing* (F37.101), Tutor. SNU. \
     ],
 
     text(9pt)[
       autumn 2024
     ],
     text(10pt)[
-      *Tutor, _L0444.000500 Core Computing_* \
-      Instructor: Kim, Hyunju \
-      Faculty of Liberal Education, Seoul National University \
-    ],
-    
-    text(9pt)[
-      spring 2025
-    ],
-    text(10pt)[
-      *Teaching Assistant, _4190.310 Programming Languages_* \
-      Instructor: Yi, Kwangkeun \
-      Dept. of Computer Science and Engineering, Seoul National University \
+      *Core Computing* (L0444.000500), Tutor. SNU. \
     ],
 
     text(9pt)[
-      spring 2025
+      spring 2024
     ],
     text(10pt)[
-      *Tutor, _F37.101 Basic Computing_* \
-      Instructor: Park, Nayeon \
-      SNU College, Seoul National University \
+      *Core Computing* (L0444.000500), Tutor. SNU. \
     ],
+
+    text(9pt)[
+      summer 2023
+    ],
+    text(10pt)[
+      *Basic Computing* (L0444.000400), Tutor. SNU. \
+    ],
+
+    v(1cm),
+    v(1cm),
     
     h(1cm),
     grid(
@@ -242,14 +282,15 @@
 
     h(1cm),
     list(
-      [*Korean* (Native)],
-      [*English* (Fluent)],
-      [*Español* (Intermediate)],
-      [*Deutsch* (Elementary)]
+      spacing: 1em,
+
+      [ *Korean/한국어* (Native) ],
+      [ *English* (Fluent) ],
+      [ *Spanish/Español* (Intermediate) ],
+      [ *German/Deutsch* (Elementary) ]
     )
 )
 
-#v(16.3cm)
-#align(right)[
-  #text(9pt)[Last updated: 24 January 2025]
+#place(bottom + right)[
+  #text(9pt)[_Last updated: 2 June 2025_]
 ]
