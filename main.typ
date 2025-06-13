@@ -64,7 +64,7 @@
 
     align(left)[
       #link("bloomwayz@snu.ac.kr")`,` \
-      #link("parkjy@ropas.snu.ac.kr")
+      #link("jypark@ropas.snu.ac.kr")
     ],
 
     align(right)[
