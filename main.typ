@@ -207,6 +207,7 @@
     ],
     text(10pt)[
       *Basic Computing* (F37.101), Tutor. SNU. \
+      Received Outstanding Tutor Award
     ],
 
     text(9pt)[
