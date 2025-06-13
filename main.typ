@@ -174,10 +174,11 @@
     align(left)[
       #list(
         spacing: 1.5em,
-        [ Haptic Keyboard for Blind or Low-vision Users \
-          (ongoing project) ],
-        [ Language server for typed lambda language M \
-          (#link("https://github.com/bloomwayz/vsm")[bloomwayz/vsm]) ]
+        [ Haptic Keyboard for Blind or Low-vision Users
+          (#link("https://github.com/bloomwayz/hapticky")[bloomwayz/hapticky])
+          - Final project for SNU _Human-Computer Interaction_ ],
+        [ Language extension for typed lambda language M
+          (#link("https://github.com/bloomwayz/vsm")[bloomwayz/mlang]) ]
       )
     ],
 
