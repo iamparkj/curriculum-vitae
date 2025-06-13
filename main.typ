@@ -294,5 +294,5 @@
 )
 
 #place(bottom + right)[
-  #text(9pt)[_Last updated: 2 June 2025_]
+  #text(9pt)[_Last updated: 13 June 2025_]
 ]
