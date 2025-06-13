@@ -25,7 +25,7 @@
 )
 
 #show link: set text(
-  size: 9pt,
+  size: 8pt,
   font: "JetBrainsMono NF",
 )
 
