@@ -81,7 +81,7 @@
     ], 
 
     align(left)[
-      #link("https://github.com/bloomwayz")[github.com/bloomwayz]
+      #link("https://github.com/iamparkj")[github.com/iamparkj]
     ]
   )
 )
@@ -128,7 +128,7 @@
     text(9pt)[03/2023-],
     text(10pt)[
       *Seoul National University*, Undergraduate, Linguistics. \
-      GPA: 4.01/4.3 \
+      GPA: 4.0/4.3 \
       Expected Graduation: February 2028
     ],
 
@@ -156,10 +156,8 @@
         
         [ Static analysis augmented AI Python teaching assistant \
           #text(9pt)[Ongoing project] ],
-        [ Modular analysis on a multi-staged language via shadow semantics \
-          #text(9pt)[Ongoing project] ],
         [ Simple language extension for a typed lambda language
-          (#link("https://github.com/bloomwayz/mlang")[bloomwayz/mlang]) \
+          (#link("https://github.com/iamparkj/vsm")[iamparkj/vsm]) \
           #text(9pt)[Distributed for an SNU course _Programming Languages_] ]
       )
     ],
@@ -173,7 +171,7 @@
 
     align(left)[
       *Institute of Humanities, Social Sciences and Social Science Education* \
-      at Korea National University of Education, Cheongju,
+      at Korea National University of Education,
       Research assistant.
 
       #list(
@@ -190,7 +188,7 @@
 
     align(left)[
       *Computational Semantics Laboratory* \
-      at Korea University, Seoul,
+      at Korea University,
       Research assistant.
 
       #list(
@@ -214,8 +212,8 @@
 
     v(5.5em),
     align(left)[
-      *Hapticky:* a haptic keyboard application for low-vision users
-      (#link("https://github.com/bloomwayz/hapticky")[bloomwayz/hapticky]).
+      *Hapticky:* a haptic keyboard application for low vision users
+      (#link("https://github.com/iamparkj/hapticky")[iamparkj/hapticky]).
 
       #text(9pt)[
         Hapticky is an iOS haptic-augmented keyboard app. Each key has a distinguished haptic pattern so that low-vision users can enter the keyboard more easily. It is a final project for an SNU undergraduate course _Human-Computer Interaction_.
@@ -225,14 +223,14 @@
     v(0em),
     align(left)[
       *SuperSnake:* a snake game variation with multi-stage system
-      (#link("https://github.com/bloomwayz/super-snake")[bloomwayz/super-snake]).
+      (#link("https://github.com/iamparkj/super-snake")[iamparkj/super-snake]).
 
       #text(9pt)[
         SuperSnake is a simple snake game which accelerates with each level, provided as a web application. Rescript React and Javalin server are used in this project. It is a final project for an SNU undergraduate course _Computer Programming_.
       ]
     ],
 
-    v(1em), v(1em),
+    v(4em), v(4em),
     
     v(1.5em),
     grid(
@@ -353,5 +351,5 @@
 )
 
 #place(bottom + right)[
-  #text(9pt)[_Last updated: 4 July 2025_]
+  #text(9pt)[_Last updated: 18 July 2025_]
 ]
