@@ -1,0 +1,56 @@
+name: Build & Sync
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'cv-en.typ'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v6
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v5
+
+      - name: Compile to PDF
+        run: typst compile cv-en.typ cv-en.pdf --font-path ./fonts
+
+      - name: Push PDF to the CV repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add cv-en.pdf
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "📦 Update cv-en.pdf"
+            git push origin main
+          else
+            echo "No changes detected in PDF for `curriculum-vitae`."
+          fi
+      
+      - name: Push PDF to young-home
+        run: |
+          git clone https://${{ secrets.SYNC_TOKEN }}@github.com/young-52/young-home.git dest
+          cp cv-en.pdf dest/static/
+
+          cd dest
+          git add static/cv-en.pdf
+
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "🍱 Update cv-en.pdf"
+            git push origin main
+          else
+            echo "No changes detected in `young-home`."
+          fi
+
+      - name: Check
+        run: yarn check-all
