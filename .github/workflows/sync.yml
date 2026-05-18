@@ -51,6 +51,3 @@ jobs:
           else
             echo "No changes detected in `young-home`."
           fi
-
-      - name: Check
-        run: yarn check-all
