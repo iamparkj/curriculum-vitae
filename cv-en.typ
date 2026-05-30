@@ -255,7 +255,7 @@
     ],
 
     align(left)[
-      #https("young-home.vercel.app")
+      #https("junyoung.vercel.app")
     ],
   ),
 )
@@ -404,7 +404,7 @@
   date: [Sep 2025 \ -- Aug 2026],
   title: "Humanities Scholarship,",
   position: "SK ecoplant.",
-  body: [Recognized for societal contribution; \$1,700 scholarship per semester.],
+  body: [Recognized for societal contribution; ￦2.5M scholarship per semester.],
   end: false,
 )
 
@@ -482,7 +482,7 @@
   date: [
     Summer 2023
   ],
-  title: "SNU L0444.000500 Basic Computing",
+  title: "SNU L0444.000400 Basic Computing",
   end: true,
 )
 
@@ -549,5 +549,5 @@
 
 
 #place(bottom + right)[
-  #text(9pt)[_Last Updated: 19 May 2026_]
+  #text(9pt)[_Last Updated: 30 May 2026_]
 ]
