@@ -29,8 +29,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### macOS ###
+# General
+*.pdf
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
