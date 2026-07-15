@@ -46,7 +46,7 @@
 )[#it]
 
 #let sans-sm(it) = text(
-  size: 8.29pt,
+  size: 8pt,
   font: sans-fonts,
 )[#it]
 
@@ -79,13 +79,13 @@
 )
 
 #set grid(
-  columns: (0.8in, auto),
+  columns: (0.88in, auto),
   align: (right, left),
   column-gutter: 0.2in,
 )
 
 #set list(
-  spacing: 1em,
+  spacing: 1.2em,
 )
 
 
@@ -135,11 +135,11 @@
   [
     #sans-bold(title)
     #text(style: "italic")[#position]
-
+    #v(-.3em)
     #body
   ],
 
-  if end [ #v(2em) ] else [ #v(.5em) ],
+  if end [ #v(2em) ] else [ #v(1em) ],
 )
 
 
@@ -267,37 +267,29 @@
 /////////////// Contents ///////////////
 
 #plain-content[
-  I am an undergraduate student in Linguistics and Computer Science at Seoul National University.
-
+  I am a senior undergraduate student in Linguistics and Computer Science at Seoul National University.
   I am fascinated by every area *where humans and computers meet*: from making developer tools more intuitive to designing AI-powered systems that support diverse users.
+  I aim to improve developer experience based on natural/programming languages and HCI.
 
-  My goal is to improve developer experience based on natural/programming languages and HCI.
+  _*Areas*_ #h(.5em) _Human-Computer Interaction_ · _Social Computing_ · _Formal Semantics of Languages_
 ]
-
-#header[Interests]
-#bullet-content(
-  [Human-Computer Interaction],
-  [Human-Centered AI],
-  [Mechanistic Interpretability of Language Models],
-  [Formal Semantics of Natural/Programming Languages],
-)
 
 #header[Education]
 #timeline-entry(
-  date: [Mar 2026 --],
-  title: "Seoul National University (SNU),",
+  date: [Mar 2026--],
+  title: "Seoul National University,",
   position: "B.Sc. in Computer Science and Engineering.",
   end: false,
 )
 
-#v(-.7em)
+#v(-1.4em)
 
 #timeline-entry(
-  date: [Mar 2023 --],
-  title: "Seoul National University (SNU),",
+  date: [Mar 2023--],
+  title: "Seoul National University,",
   position: "B.A. in Linguistics.",
   body: [
-    - GPA: 3.91/4.3 \
+    - \GPA: 4.02/4.3 \
     - Expected Graduation: February 2028
   ],
   end: true,
@@ -305,7 +297,21 @@
 
 #header[Research Experience]
 #timeline-entry(
-  date: [Oct 2025 --],
+  date: [Jul 2026--],
+  title: "Interaction Labaoratory, KAIST,",
+  position: "Research intern.",
+  body: [
+    #block[
+      #show link: set text(size: 10pt, font: "Libertinus Serif")
+      Advised by #link("https://juhokim.com", "Juho Kim").
+    ]
+    - Public opinion exploration via LLM-agent-based mini-public \
+      #text(8pt)[ _Ongoing research._ ]
+  ],
+)
+
+#timeline-entry(
+  date: [Oct 2025--Jul 2026],
   title: "Natural Language Processing Laboratory, SNU,",
   position: "Research intern.",
   body: [
@@ -313,15 +319,21 @@
       #show link: set text(size: 10pt, font: "Libertinus Serif")
       Advised by #link("https://knlp.snu.ac.kr/people", "Hyopil Shin") and #link("https://sanajlee.github.io", "Sangah Lee").
     ]
-    - Mechanistic interpretability of React `useEffect` dependency reasoning in LLMs \
-      #text(9pt)[ _Ongoing research._ ]
-    - Intent and sentiment analysis module for callbot frameworks \
-      #text(9pt)[ _Ongoing research._ ]
+    - Code model preferences and predictive cues in array completion tasks #github-icon("young-52/array-behaviour") \
+      #text(
+        8pt,
+      )[ _Investigated token-level preferences of LLMs in code completion, demonstrating that apparent React Hook understanding is driven by surface cues rather than sematic comprehension._ ]
+    - Tour of Gradio: Gradio tutorial for beginners #github-icon("young-52/tour-of-gradio") \
+      #text(
+        8pt,
+      )[ _An LLM/Gradio education website for non-CS major students, which contains of interactive Gradio tutorials and online Gradio playground. Contributed as a frontend engineer and UI designer._ ]
+    - #smallcaps[Clara]: Linguistic framework for analysing customers' intent and sentiment \
+      #text(8pt)[ _Ongoing research._ ]
   ],
 )
 
 #timeline-entry(
-  date: [Aug 2024 \ -- Aug 2025],
+  date: [Aug 2024--Aug 2025],
   title: "Programming Language Laboratory, SNU,",
   position: "Research intern.",
   body: [
@@ -329,13 +341,13 @@
       #show link: set text(size: 10pt, font: "Libertinus Serif")
       Advised by #link("https://kwangkeunyi.snu.ac.kr", "Kwangkeun Yi").
     ]
-    - Static analysis augmented AI Python teaching assistant #github-icon("joongwon/AITA-Colab") \
+    - Static analysis augmented AI Python tutor #github-icon("joongwon/AITA-Colab") \
       #text(
-        9pt,
-      )[ _A Chrome extension for Google Colab. Contributed as a frontend engineer to design the UI/UX and implement data fetching architecture._ ]
+        8pt,
+      )[ _A Chrome extension for Google Colab. I designed the UI/UX and implemented data fetching architecture._ ]
     - M language server and extension #github-icon("young-52/mlang") \
       #text(
-        9pt,
+        8pt,
       )[ _Developed a language server for polymorphic-typed lambda language M, featuring token-wise type inference and semantic highlighting. Deployed as an official tool for the SNU course Programming Languages_. ]
   ],
   end: true,
@@ -345,7 +357,7 @@
 
 #header[Projects]
 #timeline-entry(
-  date: [Dec 2025 --],
+  date: [Dec 2025--],
   title: [Moiming,],
   position: [
     Frontend developer
@@ -355,23 +367,10 @@
   body: [
     A web service for creating and managing first-come-first-served events.
 
-    #set text(9pt)
+    #set text(8pt)
     - Contributed to early-stage UI/UX ideation.
     - Implemented core web interfaces and developed authentication and event creation modules.
     - Built a CI/CD pipeline via GitHub Actions to automate code quality checks and deployment to AWS S3 and CloudFront.
-  ],
-)
-
-#timeline-entry(
-  date: [Jan 2025 \ -- Apr 2025],
-  title: [Tour of Gradio,],
-  position: [
-    UI designer & frontend developer
-    #h(.1em)
-    #github-icon("young-52/tour-of-gradio")
-  ],
-  body: [
-    An LLM/Gradio education website for non-CS major students, which contains of interactive Gradio tutorials and online Gradio playground.
   ],
 )
 
@@ -385,14 +384,14 @@
 )
 
 #timeline-entry(
-  date: [Mar 2025 \ -- Jun 2025],
+  date: [Mar 2025--Jun 2025],
   title: "Hapticky",
   position: github-icon("young-52/hapticky"),
   body: [
     An iOS haptic-augmented keyboard prototype for low vision users.
     Final project for the SNU  course _Human-Computer Interaction_.
 
-    #set text(9pt)
+    #set text(8pt)
     - Designed distinct haptic patterns and assigned them to keys to improve texting experiences.
     - Participated in designing UI and developing the iOS application.
   ],
@@ -401,7 +400,7 @@
 
 #header[Selected Honours]
 #timeline-entry(
-  date: [Sep 2025 \ -- Aug 2026],
+  date: [Sep 2025--Aug 2026],
   title: "Humanities Scholarship,",
   position: "SK ecoplant.",
   body: [Recognized for societal contribution; ￦2.5M scholarship per semester.],
@@ -429,7 +428,7 @@
   #sans[_Undergraduate Teaching Assistant_]
 ]
 
-#v(-3em)
+#v(-2.9em)
 
 #timeline-entry(
   date: [
@@ -439,7 +438,7 @@
   position: "Head undergraduate TA.",
 )
 
-#v(-.7em)
+#v(-1em)
 
 #timeline-entry(
   date: [
@@ -448,7 +447,7 @@
   title: "SNU F37.204 Core Computing",
 )
 
-#v(-.7em)
+#v(-1em)
 
 #timeline-entry(
   date: [
@@ -458,7 +457,7 @@
   position: "Outstanding Teaching Assistant Award",
 )
 
-#v(-.7em)
+#v(-1em)
 
 #timeline-entry(
   date: [
@@ -467,7 +466,7 @@
   title: "SNU 4190.310 Programming Languages",
 )
 
-#v(-.7em)
+#v(-1em)
 
 #timeline-entry(
   date: [
@@ -476,7 +475,7 @@
   title: "SNU L0444.000500 Core Computing",
 )
 
-#v(-.7em)
+#v(-1em)
 
 #timeline-entry(
   date: [
@@ -490,10 +489,10 @@
 
 #header[Miscellaneous]
 #timeline-entry(
-  date: [Sep 2025 --],
+  date: [Sep 2025--],
   title: "Waffle Studio,",
   position: "Frontend engineer.",
-  body: text(9pt)[
+  body: text(8pt)[
     Waffle Studio is a development club at SNU.
     I am participating in Moiming project as a frontend developer.
     Also, I take a part in React Seminar team to prepare a React seminar for new members in Autumn 2026.
@@ -502,20 +501,20 @@
 )
 
 #timeline-entry(
-  date: [Mar 2024 --],
+  date: [Mar 2024--],
   title: "LnL, the residential college at SNU,",
   position: "Residential assistant.",
-  body: text(9pt)[
+  body: text(8pt)[
     LnL is a residential college at SNU.
     I provide general advice to help my freshmen mentees adapt to campus life, living with them at SNU residential hall.],
   end: false,
 )
 
 #timeline-entry(
-  date: [Jan 2025 \ -- Feb 2026],
+  date: [Jan 2025--Feb 2026],
   title: "Linguistics Student Executive Office,",
   position: "Co-founder & co-director.",
-  body: text(9pt)[
+  body: text(8pt)[
     We have done a variety of community events and welfare business, e.g. the first Professor-Student Council for education environment.
   ],
   end: true,
@@ -543,11 +542,11 @@
   title: "I Have Experience in",
   body: [
     C (2016) · Java (2018) · JavaScript (2024) · Swift (2025) · #cpp (2025) · ReScript (2025) · Rust (2025) \
-    PyTorch (2023) · Next.js (2026) · Svelte/SvelteKit (2026) · TransformerLens (2026)
+    PyTorch (2023) · Next.js (2026) · Svelte/SvelteKit (2026)
   ],
 )
 
 
 #place(bottom + right)[
-  #text(9pt)[_Last Updated: 30 May 2026_]
+  #text(9pt)[_Last Updated: 16 Jul 2026_]
 ]
