@@ -289,8 +289,8 @@
   title: "Seoul National University,",
   position: "B.A. in Linguistics.",
   body: [
-    - \GPA: 4.02/4.3 \
-    - Expected Graduation: February 2028
+    GPA: 4.02/4.3 \
+    Expected Graduation: Feb 2028
   ],
   end: true,
 )
@@ -305,8 +305,8 @@
       #show link: set text(size: 10pt, font: "Libertinus Serif")
       Advised by #link("https://juhokim.com", "Juho Kim").
     ]
-    - Public opinion exploration via LLM-agent-based mini-public \
-      #text(8pt)[ _Ongoing research._ ]
+    - Exploring public opinion via LLM-agent-based mini-public \
+      #text(8pt)[ Ongoing research. ]
   ],
 )
 
@@ -322,13 +322,15 @@
     - Code model preferences and predictive cues in array completion tasks #github-icon("young-52/array-behaviour") \
       #text(
         8pt,
-      )[ _Investigated token-level preferences of LLMs in code completion, demonstrating that apparent React Hook understanding is driven by surface cues rather than sematic comprehension._ ]
+      )[ Investigated token-level preferences of LLMs in code completion, demonstrating that apparent React Hook understanding is driven by surface cues rather than sematic comprehension. ]
     - Tour of Gradio: Gradio tutorial for beginners #github-icon("young-52/tour-of-gradio") \
       #text(
         8pt,
-      )[ _An LLM/Gradio education website for non-CS major students, which contains of interactive Gradio tutorials and online Gradio playground. Contributed as a frontend engineer and UI designer._ ]
+      )[ An LLM/Gradio education website for non-CS major students, which contains of interactive Gradio tutorials and online Gradio playground. Contributed as a frontend engineer and UI designer. ]
     - #smallcaps[Clara]: Linguistic framework for analysing customers' intent and sentiment \
-      #text(8pt)[ _Ongoing research._ ]
+      #text(
+        8pt,
+      )[ Developed an intent and sentiment classification taxonomy and analysed customer call data based on it. ]
   ],
 )
 
@@ -344,11 +346,11 @@
     - Static analysis augmented AI Python tutor #github-icon("joongwon/AITA-Colab") \
       #text(
         8pt,
-      )[ _A Chrome extension for Google Colab. I designed the UI/UX and implemented data fetching architecture._ ]
+      )[ A Chrome extension for Google Colab. I designed the UI/UX and implemented data fetching architecture. ]
     - M language server and extension #github-icon("young-52/mlang") \
       #text(
         8pt,
-      )[ _Developed a language server for polymorphic-typed lambda language M, featuring token-wise type inference and semantic highlighting. Deployed as an official tool for the SNU course Programming Languages_. ]
+      )[ Developed a language server for polymorphic-typed lambda language M, featuring token-wise type inference and semantic highlighting. Deployed as an official tool for the SNU course _Programming Languages_. ]
   ],
   end: true,
 )
@@ -357,7 +359,7 @@
 
 #header[Projects]
 #timeline-entry(
-  date: [Dec 2025--],
+  date: [Dec 2025--Jun 2026],
   title: [Moiming,],
   position: [
     Frontend developer
@@ -375,20 +377,10 @@
 )
 
 #timeline-entry(
-  date: "Aug 2025",
-  title: [SNU Linguistics B.A. Thesis #LaTeX Class],
-  position: github-icon("young-52/snu-ling-ba-thesis"),
-  body: [
-    A #LaTeX class for Bachelor's theses at the Department of Linguistics, Seoul National University.
-  ],
-)
-
-#timeline-entry(
   date: [Mar 2025--Jun 2025],
-  title: "Hapticky",
+  title: "Haptic-Augmented Keyboard for Low Vision Users",
   position: github-icon("young-52/hapticky"),
   body: [
-    An iOS haptic-augmented keyboard prototype for low vision users.
     Final project for the SNU  course _Human-Computer Interaction_.
 
     #set text(8pt)
@@ -400,9 +392,9 @@
 
 #header[Selected Honours]
 #timeline-entry(
-  date: [Sep 2025--Aug 2026],
+  date: [Sep 2025--Aug 2027],
   title: "Humanities Scholarship,",
-  position: "SK ecoplant.",
+  position: "SK ecoplant Co.,Ltd.",
   body: [Recognized for societal contribution; ￦2.5M scholarship per semester.],
   end: false,
 )
@@ -454,7 +446,7 @@
     Spring 2025
   ],
   title: "SNU F37.101 Basic Computing,",
-  position: "Outstanding Teaching Assistant Award",
+  position: "Outstanding Teaching Assistant Award.",
 )
 
 #v(-1em)
@@ -485,7 +477,7 @@
   end: true,
 )
 
-#pagebreak()
+
 
 #header[Miscellaneous]
 #timeline-entry(
@@ -505,8 +497,7 @@
   title: "LnL, the residential college at SNU,",
   position: "Residential assistant.",
   body: text(8pt)[
-    LnL is a residential college at SNU.
-    I provide general advice to help my freshmen mentees adapt to campus life, living with them at SNU residential hall.],
+    Provided general advice to help freshmen mentees adapt to campus life, living with them at SNU residential hall.],
   end: false,
 )
 
@@ -515,7 +506,7 @@
   title: "Linguistics Student Executive Office,",
   position: "Co-founder & co-director.",
   body: text(8pt)[
-    We have done a variety of community events and welfare business, e.g. the first Professor-Student Council for education environment.
+    Ran a variety of community events and welfare business, e.g. the first Professor-Student Council for education environment.
   ],
   end: true,
 )
@@ -533,8 +524,7 @@
 #timeline-entry(
   title: "I Use Frequently",
   body: [
-    Python (2019) · #LaTeX (2023) · OCaml (2024) · TypeScript (2024) · Typst (2024) \
-    React (2025) · GitHub Actions (2025)
+    Python (2019) · #LaTeX (2023) · OCaml (2024) · TypeScript (2024) · Typst (2024) · React (2025)
   ],
 )
 
@@ -542,11 +532,11 @@
   title: "I Have Experience in",
   body: [
     C (2016) · Java (2018) · JavaScript (2024) · Swift (2025) · #cpp (2025) · ReScript (2025) · Rust (2025) \
-    PyTorch (2023) · Next.js (2026) · Svelte/SvelteKit (2026)
+    Next.js (2026) · Svelte/SvelteKit (2026)
   ],
 )
 
 
 #place(bottom + right)[
-  #text(9pt)[_Last Updated: 16 Jul 2026_]
+  #text(9pt)[_Last Updated: 4 Aug 2026_]
 ]
