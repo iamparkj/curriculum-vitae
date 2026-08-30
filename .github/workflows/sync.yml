@@ -23,7 +23,9 @@ jobs:
         uses: typst-community/setup-typst@v5
 
       - name: Compile to PDF
-        run: typst compile cv-en.typ cv-en.pdf --font-path ./fonts
+        run: |
+          typst compile cv-en.typ cv-en.pdf --font-path ./fonts \
+            --creation-timestamp "$(git log -1 --format=%ct)"
 
       - name: Push PDF to the CV repository
         run: |
